@@ -45,6 +45,10 @@ app.get('/api/:position', (req, res) => {
     }
 })
 
+app.get('/api', (req, res) => {
+    res.json(chicagoBears)
+})
+
 app.listen(process.env.PORT || PORT, () => {
     console.log(`Running on server ${PORT}`)
 })
